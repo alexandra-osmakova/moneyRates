@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="moneyRates.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <input id = 'input' type="text" placeholder = 'Put sum of money here'>
+        <div class = 'selectionWrap'>
+        <select size = '4' id="moneyToChange">
+            <option disabled>Converte from</option>
+                <option value="RUB">RUB</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+            <select size = '4' id="moneyChanged">
+               <option id = 'disabledOption' disabled>Converte to</option>
+            </select>
+        </div>
+        <span id = 'result'>Result will goes here</span>
+        <button id = 'btn'>Press for result</button>
+      </div>
+      <script src="moneyRates.js"></script>  
+</body>
+</html>

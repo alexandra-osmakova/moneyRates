@@ -1,0 +1,153 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+#wrap {
+    background-color: #e6e6e6;
+    width: 80%;
+    margin: 4rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+}
+#input {
+    width: 65%;
+    padding: 0.5rem;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    border: 1.5px solid #d9d9d9;
+    cursor: pointer;    
+}
+
+select {
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.selectionWrap {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#result {
+    width: 25%; 
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#btn {
+    width: 20%;
+    padding: 0.5rem;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    select, #btn, #result {
+        font-size: 1rem;  
+        line-height: 1.5rem;  
+
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px)  {
+    html, body {
+        font-size: 14px;
+    }
+
+    .selectionWrap {
+        flex-direction: column;
+    }
+
+    select, #result, #btn {
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    #input {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    html, body {
+        font-size: 14px;
+    }
+
+    .selectionWrap {
+        flex-direction: column;
+    }
+
+    select, #result, #btn {
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    #input {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    html, body {
+        font-size: 13px;
+    }
+
+    .selectionWrap {
+        flex-direction: column;
+    }
+
+    select, #result, #btn {
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    #input {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
