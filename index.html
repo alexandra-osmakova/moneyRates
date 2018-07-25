@@ -12,11 +12,12 @@
     <div id="wrap">
         <input id = 'input' type="text" placeholder = 'Put sum of money here'>
         <div class = 'selectionWrap'>
-        <select size = '4' id="moneyToChange">
+        <select size = '5' id="moneyToChange">
             <option disabled>Converte from</option>
                 <option value="RUB">RUB</option>
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
+                <option value="CNY">CNY</option>
             </select>
             <select size = '4' id="moneyChanged">
                <option id = 'disabledOption' disabled>Converte to</option>
@@ -24,7 +25,8 @@
         </div>
         <span id = 'result'>Result will goes here</span>
         <button id = 'btn'>Press for result</button>
-      </div>
+        <span class = 'comment'>* CNY rate is for 10CNY</span>
+    </div>
       <script src="moneyRates.js"></script>  
 </body>
 </html>
